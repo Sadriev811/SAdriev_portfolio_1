@@ -1,0 +1,336 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Upright:wght@300;400;500;600;700&family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: white;
+    
+}
+img {
+    max-width: 100%;
+}
+$cl1: #DCCA87;
+$cl2: #AAAAAA;
+$bg-cl:#040404;
+$Open-f: 'Open Sans', sans-serif;
+$Corm-f: 'Cormorant Upright', serif;
+
+
+@mixin text ($f, $fw, $fs, $lh, $let) {
+    font-family: $f;
+    font-weight: $fw;
+    font-size: $fs;
+    line-height: $lh;
+    letter-spacing: $let;
+}
+@mixin flex ($dis, $jus, $ai) {
+    display: $dis;
+    justify-content: $jus;
+    align-items: $ai;
+}
+@mixin grid ($g, $gtc, $gap) {
+    display: $g;
+    grid-template-columns: $gtc;
+    gap: $gap;
+}
+@mixin btn1 ($bh, $bw, $br) {
+    height: $bh;
+    width: $bw; 
+    border-radius: $br;
+}
+@mixin pc ($c, $pb) {
+    color: $c;
+    padding-bottom: $pb;
+}
+
+%btn {
+    background: #DCCA87;
+    border: 1px solid #DCCA87;
+    color: #0C0C0C;
+    @include text ($Corm-f, 700, 16px, 28px, 4%);
+    cursor: pointer;
+    transition: 400ms ease;
+    &:hover {
+        background: #d4bb5f;
+        box-shadow: 0 0 50px #DCCA87;
+        border: 1px solid #d4bb5f;
+
+    }
+    &:active {
+        background: #040404;
+        box-shadow: 0 0 50px #040404;
+        border: 1px solid #d4bb5f;
+        color: #d4bb5f;
+    }
+
+}
+%hover {
+    font-size: 17px;
+    opacity: 1;
+    text-shadow: 0px 0px 30px rgb(42, 223, 217);
+    color: rgb(26, 189, 165);
+}
+%bg {
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+%cont {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+%btn-s {
+                    height: 40px;
+                    width: 40px;
+                    background: linear-gradient(120deg, $cl1 0%, black 100%);
+                    border: none;
+                    cursor: pointer;
+                    display: inline;
+                    text-align: center;
+                    margin-top: 25px;
+                    margin-left: 10px;
+                    opacity: 0.80;
+                    border-radius: 50%;
+                    transition: 300ms ease;
+                    margin-left: 368px;
+                    &:hover {
+                        opacity: 1;
+                        background: linear-gradient(120deg,  black 0%, $cl1 100%);
+                    }
+                    &:active {
+                        background: black;
+                    }
+}
+%box {
+    max-width: 100%;
+            height: 440px;
+            background: linear-gradient(0deg, #0C0C0C, #0C0C0C),
+            linear-gradient(0deg, rgba(220, 202, 135, 0.2), rgba(220, 202, 135, 0.2));
+            border: 1px solid #DCCA8733;
+            margin: 150px 0;
+            padding: 10px 20px;
+}
+%inp {
+    text-align: center;
+        height: 60px;
+        width: 300px;
+        background-color: #0C0C0C;
+        border: 1px solid #F5EFDB;
+}
+%item {
+    cursor: pointer;
+                    opacity: 0.80;
+                    transition: 300ms;
+                    &:hover {
+                        border: 1px solid #DCCA87;
+                        opacity: 1;
+                        backdrop-filter: blur(5px);
+                        
+                    }
+}
+%first_txt {
+    h4 {
+        @include text ($Corm-f, 700, 23px, 30px, 1px)
+    }
+    h3 {
+        @include text ($Corm-f, 600, 64px, 83.2px, 2.5px);
+        margin-bottom: 40px;
+        color: $cl1;
+    }
+}
+%p {
+    padding: 150px 0;
+}
+%ta {
+    text-align: center;
+}
+%footer {
+    .last_gr {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px;
+        text-align: center;
+        align-items: center;
+    }
+    .last_first h3{
+        font-family: 'Cormorant Upright', serif;
+        font-weight: 400;
+        font-size: 32px;
+        letter-spacing: 0.04em;
+        line-height: 42px;
+        color: #F5EFDB;
+        padding-bottom: 25px;
+    }
+    .last_first p {
+        font-weight: 400;
+        font-size: 16px;
+        letter-spacing: 0.04em;
+        line-height: 28px;
+        color: #AAAAAA;
+        margin-bottom: 8px;
+    }
+    .last_first a {
+        text-decoration: none;
+    }
+    .last_second h2{
+        font-family: 'Cormorant Upright', serif;
+        font-weight: 700;
+        font-size: 64px;
+        letter-spacing: 0.04em;
+        line-height: 83px;
+        color: #DCCA87;
+        margin-bottom: 15px;
+    }
+    .last_second p {
+        font-weight: 400;
+        font-size: 16px;
+        letter-spacing: 0.04em;
+        line-height: 28px;
+        color: rgb(146, 141, 141);
+        margin-bottom: 20px;
+    }   
+    .last_third h3{
+        font-family: 'Cormorant Upright', serif;
+        font-weight: 400;
+        font-size: 32px;
+        letter-spacing: 0.04em;
+        line-height: 42px;
+        color: #F5EFDB;
+        padding-bottom: 25px;
+        margin-top: 25px;
+    }
+    .last_third p {
+        font-weight: 400;
+        font-size: 16px;
+        letter-spacing: 0.04em;
+        line-height: 28px;
+        color: #AAAAAA;
+        margin-bottom: 8px;
+    }
+    .menu_1 {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 100%;
+        background-color: rgba(0, 0, 0, 0.76);
+        flex-direction: column;
+        padding: 80px 50px;
+        transition: 500ms;
+        z-index: 999;
+    }
+    span {
+        width: 20px;
+        height: 3px;
+        border-radius: 3px;
+        background: white;
+        display: none;
+        margin: 3px;
+    }
+    .active {
+        display: flex;
+        left: 0;
+    }
+    .menu_1 a {
+        color: #fff;
+        text-decoration: none;
+        display: block;
+        font-size: 20px;
+        margin: 10px 0;
+        transition: 300ms;
+    
+    }
+    .menu_1 a:hover {
+        color: rgb(85, 0, 255);
+    }
+}
+%inp2 {
+    @include btn1 (60px, 635px, 5px);
+                        color: $cl2;
+                        border: 1px solid #F5EFDB;
+                        padding: 10px;
+                        margin-top: 65px;
+                        background: linear-gradient(0deg, #0C0C0C, #0C0C0C),
+                        linear-gradient(0deg, rgba(220, 202, 135, 0.2), rgba(220, 202, 135, 0.2));
+}
+%box_txt {
+    .txt {
+        @extend %first_txt;
+        margin-top: 40px;
+        a {
+            @include text ($Open-f, 400, 16px, 28px, 0.7px);
+            color: white;
+            
+            
+        }
+
+    }
+    input {
+        @extend %inp2;
+
+        }
+        button {
+            @extend %btn;
+            @include btn1 (44px, 129px, 5px);
+        }
+}
+%modalka {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background: #000000d8;
+    backdrop-filter: blur(2px);
+    z-index: 998;
+    display: none;
+    transition: 300ms ease;
+}
+%span {
+                width: 20px;
+                height: 3px;
+                border-radius: 3px;
+                background: white;
+                display: flex;
+                margin: -3px;
+                z-index: 999;
+                position: fixed;
+                cursor: pointer;
+                top: 70px;
+                right: 150px;
+}
+%keyf {
+    @keyframes spans2 {
+        0% {
+            opacity: .1;
+    
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+}
+%m_box {
+            position: fixed;
+            top: 50px;
+            right: 297px;
+            z-index: 999;
+}
+%box_in {
+            max-width: 200px;
+            height: 100px;
+            background: linear-gradient(0deg, #0C0C0C, #0C0C0C),
+            linear-gradient(0deg, rgba(220, 202, 135, 0.2), rgba(220, 202, 135, 0.2));
+            border: 1px solid #DCCA8733;
+            margin: 150px 0;
+            padding: 10px 20px;
+            box-shadow: 0px 0px 30px #DCCA8733;
+}
+%lines {
+    .line_1 {
+        transform: rotate(46deg);
+    }
+    .line_2 {
+        transform: rotate(135deg);
+    }
+    
+}

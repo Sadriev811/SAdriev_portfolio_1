@@ -1,0 +1,709 @@
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Upright:wght@300;400;500;600;700&family=Open+Sans:wght@300;400;500;600;700;800&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  color: white;
+}
+
+img {
+  max-width: 100%;
+}
+
+.footer .container .footer_box .footer_box_txt button, .seven .container .find .find_txt button, .six .container .btn button, .third .container .food .food_txt .food_txt_item button, .second .container .book .book_txt button, .modalka .container .modalka_box .modalka_box_txt button {
+  background: #DCCA87;
+  border: 1px solid #DCCA87;
+  color: #0C0C0C;
+  font-family: "Cormorant Upright", serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 28px;
+  letter-spacing: 4%;
+  cursor: pointer;
+  transition: 400ms ease;
+}
+.footer .container .footer_box .footer_box_txt button:hover, .seven .container .find .find_txt button:hover, .six .container .btn button:hover, .third .container .food .food_txt .food_txt_item button:hover, .second .container .book .book_txt button:hover, .modalka .container .modalka_box .modalka_box_txt button:hover {
+  background: #d4bb5f;
+  box-shadow: 0 0 50px #DCCA87;
+  border: 1px solid #d4bb5f;
+}
+.footer .container .footer_box .footer_box_txt button:active, .seven .container .find .find_txt button:active, .six .container .btn button:active, .third .container .food .food_txt .food_txt_item button:active, .second .container .book .book_txt button:active, .modalka .container .modalka_box .modalka_box_txt button:active {
+  background: #040404;
+  box-shadow: 0 0 50px #040404;
+  border: 1px solid #d4bb5f;
+  color: #d4bb5f;
+}
+
+.first .header .container .header_in .comment .comment_three:hover, .first .header .container .header_in .comment .comment_one:hover, .first .header .container .header_in .navbar a:hover {
+  font-size: 17px;
+  opacity: 1;
+  text-shadow: 0px 0px 30px rgb(42, 223, 217);
+  color: rgb(26, 189, 165);
+}
+
+.footer, .seven, .five, .third, .first {
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.modalka .container, .footer .container, .seven .container, .six .container, .five .container, .four .container, .third .container, .second .container, .first .container, .first .header .container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.first .container .btn_slider {
+  height: 40px;
+  width: 40px;
+  background: linear-gradient(120deg, #DCCA87 0%, black 100%);
+  border: none;
+  cursor: pointer;
+  display: inline;
+  text-align: center;
+  margin-top: 25px;
+  margin-left: 10px;
+  opacity: 0.8;
+  border-radius: 50%;
+  transition: 300ms ease;
+  margin-left: 368px;
+}
+.first .container .btn_slider:hover {
+  opacity: 1;
+  background: linear-gradient(120deg, black 0%, #DCCA87 100%);
+}
+.first .container .btn_slider:active {
+  background: black;
+}
+
+.modalka .container .modalka_box, .footer .container .footer_box, .second .container .book {
+  max-width: 100%;
+  height: 440px;
+  background: linear-gradient(0deg, #0C0C0C, #0C0C0C), linear-gradient(0deg, rgba(220, 202, 135, 0.2), rgba(220, 202, 135, 0.2));
+  border: 1px solid rgba(220, 202, 135, 0.2);
+  margin: 150px 0;
+  padding: 10px 20px;
+}
+
+.second .container .book .book_txt .input input, .second .container .book .book_txt .input select {
+  text-align: center;
+  height: 60px;
+  width: 300px;
+  background-color: #0C0C0C;
+  border: 1px solid #F5EFDB;
+}
+
+.four .container .poison .poison_img .poison_item {
+  cursor: pointer;
+  opacity: 0.8;
+  transition: 300ms;
+}
+.four .container .poison .poison_img .poison_item:hover {
+  border: 1px solid #DCCA87;
+  opacity: 1;
+  backdrop-filter: blur(5px);
+}
+
+.footer .container .footer_box .footer_box_txt .txt h4, .seven .container .find .find_txt .txt_one h4, .six .container .special .special_title h4, .four .container .poison .poison_txt h4, .second .container .book .book_txt .text h4, .modalka .container .modalka_box .modalka_box_txt .txt h4 {
+  font-family: "Cormorant Upright", serif;
+  font-weight: 700;
+  font-size: 23px;
+  line-height: 30px;
+  letter-spacing: 1px;
+}
+.footer .container .footer_box .footer_box_txt .txt h3, .seven .container .find .find_txt .txt_one h3, .six .container .special .special_title h3, .four .container .poison .poison_txt h3, .second .container .book .book_txt .text h3, .modalka .container .modalka_box .modalka_box_txt .txt h3 {
+  font-family: "Cormorant Upright", serif;
+  font-weight: 600;
+  font-size: 64px;
+  line-height: 83.2px;
+  letter-spacing: 2.5px;
+  margin-bottom: 40px;
+  color: #DCCA87;
+}
+
+.seven, .six, .four {
+  padding: 150px 0;
+}
+
+.footer .container .footer_box .footer_box_txt, .six .container .btn, .six .container .special .special_block .block h2, .six .container .special .special_title, .five .container .happy, .four .container .poison, .second .container .book .book_txt {
+  text-align: center;
+}
+
+.footer .container .last_gr {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  text-align: center;
+  align-items: center;
+}
+.footer .container .last_first h3 {
+  font-family: "Cormorant Upright", serif;
+  font-weight: 400;
+  font-size: 32px;
+  letter-spacing: 0.04em;
+  line-height: 42px;
+  color: #F5EFDB;
+  padding-bottom: 25px;
+}
+.footer .container .last_first p {
+  font-weight: 400;
+  font-size: 16px;
+  letter-spacing: 0.04em;
+  line-height: 28px;
+  color: #AAAAAA;
+  margin-bottom: 8px;
+}
+.footer .container .last_first a {
+  text-decoration: none;
+}
+.footer .container .last_second h2 {
+  font-family: "Cormorant Upright", serif;
+  font-weight: 700;
+  font-size: 64px;
+  letter-spacing: 0.04em;
+  line-height: 83px;
+  color: #DCCA87;
+  margin-bottom: 15px;
+}
+.footer .container .last_second p {
+  font-weight: 400;
+  font-size: 16px;
+  letter-spacing: 0.04em;
+  line-height: 28px;
+  color: rgb(146, 141, 141);
+  margin-bottom: 20px;
+}
+.footer .container .last_third h3 {
+  font-family: "Cormorant Upright", serif;
+  font-weight: 400;
+  font-size: 32px;
+  letter-spacing: 0.04em;
+  line-height: 42px;
+  color: #F5EFDB;
+  padding-bottom: 25px;
+  margin-top: 25px;
+}
+.footer .container .last_third p {
+  font-weight: 400;
+  font-size: 16px;
+  letter-spacing: 0.04em;
+  line-height: 28px;
+  color: #AAAAAA;
+  margin-bottom: 8px;
+}
+.footer .container .menu_1 {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 100%;
+  background-color: rgba(0, 0, 0, 0.76);
+  flex-direction: column;
+  padding: 80px 50px;
+  transition: 500ms;
+  z-index: 999;
+}
+.footer .container span {
+  width: 20px;
+  height: 3px;
+  border-radius: 3px;
+  background: white;
+  display: none;
+  margin: 3px;
+}
+.footer .container .active {
+  display: flex;
+  left: 0;
+}
+.footer .container .menu_1 a {
+  color: #fff;
+  text-decoration: none;
+  display: block;
+  font-size: 20px;
+  margin: 10px 0;
+  transition: 300ms;
+}
+.footer .container .menu_1 a:hover {
+  color: rgb(85, 0, 255);
+}
+
+.footer .container .footer_box .footer_box_txt input, .modalka .container .modalka_box .modalka_box_txt input {
+  height: 60px;
+  width: 635px;
+  border-radius: 5px;
+  color: #AAAAAA;
+  border: 1px solid #F5EFDB;
+  padding: 10px;
+  margin-top: 65px;
+  background: linear-gradient(0deg, #0C0C0C, #0C0C0C), linear-gradient(0deg, rgba(220, 202, 135, 0.2), rgba(220, 202, 135, 0.2));
+}
+
+.modalka .container .modalka_box .modalka_box_txt .txt {
+  margin-top: 40px;
+}
+.modalka .container .modalka_box .modalka_box_txt .txt a {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  letter-spacing: 0.7px;
+  color: white;
+}
+.modalka .container .modalka_box .modalka_box_txt button {
+  height: 44px;
+  width: 129px;
+  border-radius: 5px;
+}
+
+.modalka {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.8470588235);
+  backdrop-filter: blur(2px);
+  z-index: 998;
+  display: none;
+  transition: 300ms ease;
+}
+
+.modalka .container .exe span {
+  width: 20px;
+  height: 3px;
+  border-radius: 3px;
+  background: white;
+  display: flex;
+  margin: -3px;
+  z-index: 999;
+  position: fixed;
+  cursor: pointer;
+  top: 70px;
+  right: 150px;
+}
+
+@keyframes spans2 {
+  0% {
+    opacity: 0.1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.modalka .container .modalka_box {
+  position: fixed;
+  top: 50px;
+  right: 297px;
+  z-index: 999;
+}
+
+.modalka .container .exe .line_1 {
+  transform: rotate(46deg);
+}
+.modalka .container .exe .line_2 {
+  transform: rotate(135deg);
+}
+
+body {
+  background: #040404;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.first {
+  background: url(../img/glavniy-bg.png);
+  padding-top: 30px;
+}
+.first .header {
+  width: 100%;
+  cursor: pointer;
+  position: fixed;
+  top: 10px;
+  z-index: 997;
+}
+.first .header .container .header_in {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.first .header .container .header_in .menu_1 {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 100%;
+  background-color: rgba(0, 0, 0, 0.35);
+  flex-direction: column;
+  padding: 80px 50px;
+  transition: 600ms;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  backdrop-filter: blur(5px);
+}
+.first .header .container .header_in .menu_1 a {
+  color: #fff;
+  text-decoration: none;
+  display: block;
+  font-size: 20px;
+  margin: 10px 0;
+  transition: 300ms;
+}
+.first .header .container .header_in .menu_1 a:hover {
+  color: rgb(85, 0, 255);
+}
+.first .header .container .header_in .span {
+  animation: spans2 1s;
+}
+.first .header .container .header_in .span span {
+  width: 20px;
+  height: 3px;
+  border-radius: 3px;
+  background: white;
+  display: none;
+  margin: 3px;
+  z-index: 999;
+  position: relative;
+  cursor: pointer;
+}
+.first .header .container .header_in .span2 {
+  margin-top: 12px;
+  animation: spans 1s;
+}
+.first .header .container .header_in .span2 .line_1 {
+  width: 20px;
+  height: 3px;
+  border-radius: 3px;
+  background: white;
+  display: none;
+  margin: -3px;
+  z-index: 999;
+  position: relative;
+  cursor: pointer;
+  transform: rotate(46deg);
+}
+.first .header .container .header_in .span2 .line_2 {
+  width: 20px;
+  height: 3px;
+  border-radius: 3px;
+  background: white;
+  display: none;
+  margin: -3px;
+  z-index: 999;
+  position: relative;
+  cursor: pointer;
+  transform: rotate(135deg);
+}
+@keyframes spans {
+  0% {
+    opacity: 0.1;
+    transform: rotate(0deg);
+  }
+  100% {
+    opacity: 1;
+    transform: rotate(180deg);
+  }
+}
+@keyframes spans2 {
+  0% {
+    opacity: 0.1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.first .header .container .header_in .span_none {
+  display: none;
+}
+.first .header .container .header_in .active {
+  left: 0;
+}
+.first .header .container .header_in .navbar a {
+  list-style: none;
+  margin-left: 32px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  letter-spacing: 4%;
+  opacity: 0.8;
+  transition: 300ms ease;
+}
+.first .header .container .header_in .navbar a:active {
+  color: rgb(27, 104, 92);
+}
+.first .header .container .header_in .comment {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 28px;
+  letter-spacing: 5%;
+  opacity: 0.8;
+}
+.first .header .container .header_in .comment .comment_one {
+  transition: 300ms ease;
+}
+.first .header .container .header_in .comment .comment_one:active {
+  color: rgb(27, 104, 92);
+}
+.first .header .container .header_in .comment .comment_three {
+  transition: 300ms ease;
+}
+.first .header .container .header_in .comment .comment_three:active {
+  color: rgb(27, 104, 92);
+}
+.first .header .container .header_in .comment .comment_two {
+  padding: 0 50px;
+}
+
+.first {
+  padding-bottom: 30px;
+}
+.first .container .first_in {
+  text-align: center;
+  width: 634px;
+  height: 840px;
+  margin: 20px auto;
+  overflow: hidden;
+}
+.first .container .first_in .kartina {
+  display: none;
+}
+.first .container .first_in .slider {
+  margin-top: 40px;
+  width: 2536px;
+  height: 840px;
+  display: flex;
+  position: relative;
+  left: 0;
+  transition: all ease 1s;
+}
+.first .container .first_in .slider img {
+  width: 634px;
+  height: 840px;
+}
+.first .container .first_in h1 {
+  font-family: "Cormorant Upright", serif;
+  font-weight: 700;
+  font-size: 181px;
+  line-height: 235.3px;
+  letter-spacing: 7px;
+  position: absolute;
+  top: 400px;
+  left: 250px;
+}
+.second .container .book .book_txt .input {
+  margin: 65px 0;
+}
+.second .container .book .book_txt .input input, .second .container .book .book_txt .input select {
+  margin: 0 20px;
+  padding: 5px;
+}
+.second .container .book .book_txt button {
+  height: 44px;
+  width: 133px;
+  border-radius: 5px;
+}
+
+.third {
+  background: url(../img/glavniy-bg.png);
+}
+.third .container .food {
+  padding: 100px 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+.third .container .food .food_img {
+  padding-top: 100px;
+}
+.third .container .food .food_txt .food_txt_item h4 {
+  font-family: "Cormorant Upright", serif;
+  font-weight: 700;
+  font-size: 23px;
+  line-height: 30px;
+  letter-spacing: 1px;
+  margin-top: 10px;
+}
+.third .container .food .food_txt .food_txt_item h3 {
+  font-family: "Cormorant Upright", serif;
+  font-weight: 600;
+  font-size: 64px;
+  line-height: 83.2px;
+  letter-spacing: 2px;
+  color: #DCCA87;
+  padding-bottom: 30px;
+}
+.third .container .food .food_txt .food_txt_item p {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  letter-spacing: 0.8px;
+  color: #AAAAAA;
+  padding-bottom: 75px;
+}
+.third .container .food .food_txt .food_txt_item button {
+  height: 44px;
+  width: 141px;
+  border-radius: 5px;
+}
+
+.four .container .poison .poison_img {
+  display: flex;
+  justify-content: space-between;
+  align-items: align-items;
+  gap: 34px;
+}
+.five {
+  background: url(../img/img_bg3.png);
+  height: 900px;
+}
+.five .container .happy {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 900px;
+}
+.five .container .happy h2 {
+  font-family: "Cormorant Upright", serif;
+  font-weight: 600;
+  font-size: 128px;
+  line-height: 166px;
+  letter-spacing: 3.5px;
+  color: #DCCA87;
+  padding-bottom: 30px;
+}
+.five .container .happy em {
+  font-family: "Cormorant Upright", serif;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 41.6px;
+  letter-spacing: 1.2px;
+  font-style: normal;
+}
+
+.six .container .special .special_block {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+.six .container .special .special_block .block h2 {
+  font-family: "Cormorant Upright", serif;
+  font-weight: 600;
+  font-size: 45px;
+  line-height: 59px;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+}
+.six .container .special .special_block .block .block_box .block_items {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.six .container .special .special_block .block .block_box .block_items .item_name .name {
+  margin-bottom: 40px;
+}
+.six .container .special .special_block .block .block_box .block_items .item_name .name h3 {
+  font-family: "Cormorant Upright", serif;
+  font-weight: 700;
+  font-size: 23px;
+  line-height: 30px;
+  letter-spacing: 1px;
+  color: #DCCA87;
+}
+.six .container .special .special_block .block .block_box .block_items .item_name .name p {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400px;
+  font-size: 16px;
+  line-height: 28px;
+  letter-spacing: 0.5px;
+  color: #AAAAAA;
+}
+.six .container .special .special_block .block .block_box .block_items .item_price .price {
+  margin-bottom: 68px;
+}
+.six .container .special .special_block .block .block_box .block_items .item_price .price p {
+  font-family: "Cormorant Upright", serif;
+  font-weight: 700;
+  font-size: 23px;
+  line-height: 30px;
+  letter-spacing: 1px;
+}
+.six .container .btn button {
+  height: 44px;
+  width: 136px;
+  border-radius: 5px;
+  margin: 50px 0;
+}
+
+.seven {
+  background: url(../img/glavniy-bg.png);
+}
+.seven .container .find {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.seven .container .find .find_txt .txt_two p {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  letter-spacing: 0.6px;
+  color: #AAAAAA;
+  padding-bottom: 32px;
+}
+.seven .container .find .find_txt .txt_last h4 {
+  font-family: "Cormorant Upright", serif;
+  font-weight: 700;
+  font-size: 23px;
+  line-height: 30px;
+  letter-spacing: 1px;
+  color: #DCCA87;
+  padding-bottom: 16px;
+}
+.seven .container .find .find_txt .txt_last p {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  letter-spacing: 0.7px;
+  padding-bottom: 16px;
+}
+.seven .container .find .find_txt button {
+  height: 44px;
+  width: 119px;
+  border-radius: 5px;
+  margin-top: 40px;
+}
+
+.footer {
+  background: url(../img/glavniy-bg.png);
+  padding-bottom: 150px;
+  max-height: 100%;
+}
+.footer .container .footer_box .footer_box_txt .txt {
+  margin-top: 40px;
+}
+.footer .container .footer_box .footer_box_txt .txt a {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  letter-spacing: 0.7px;
+  color: white;
+}
+.footer .container .footer_box .footer_box_txt button {
+  height: 44px;
+  width: 129px;
+  border-radius: 5px;
+}
+
+.modalka .container .exe {
+  animation: spans2 2s;
+}

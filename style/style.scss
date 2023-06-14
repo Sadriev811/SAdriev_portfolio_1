@@ -1,0 +1,287 @@
+// 1 Секция 
+@import "./obnulenie.scss";
+@import "./header";
+
+// 2 Секция
+
+.second {
+    .container {
+        @extend %cont;
+        .book {
+            @extend %box;
+            .book_txt {
+                @extend %ta;
+                .text {
+                    @extend %first_txt;
+                }
+                .input {
+                    margin: 65px 0;
+                    
+                    input, select {
+                        @extend %inp;
+                        margin: 0 20px;
+                        padding: 5px;
+                    }
+                }
+                button {
+                    @extend %btn;
+                    @include btn1 (44px, 133px, 5px)
+                }
+            }
+        
+        }
+    }
+}
+
+// 3 Секция
+
+.third {
+    background: url(../img/glavniy-bg.png);
+    @extend %bg;
+    .container {
+        @extend %cont;
+        .food {
+            padding: 100px 0;
+            @include grid (grid, repeat(2, 1fr), 20px);
+            .food_img {
+                padding-top: 100px
+            }
+            .food_txt {
+                .food_txt_item {
+                    h4 {
+                        @include text ($Corm-f, 700, 23px, 30px, 1px);
+                        margin-top: 10px;
+                    }
+                    h3 {
+                        @include text ($Corm-f, 600, 64px, 83.2px, 2px);
+                        @include pc ($cl1, 30px);
+                    }
+                    p {
+                        @include text ($Open-f, 400, 16px, 28px, 0.8px);
+                        @include pc ($cl2, 75px);
+                    }
+                    button {
+                        @extend %btn;
+                        @include btn1 (44px, 141px, 5px);
+                        
+                    }
+
+                }
+            }
+        }
+    }
+}
+
+// 4 Секция
+
+.four {
+    @extend %p;
+    .container {
+        @extend %cont;
+        .poison {
+            @extend %ta;
+            .poison_txt {
+                @extend %first_txt;
+            }
+            .poison_img {
+                @include flex (flex, space-between, align-items);
+                gap: 34px;
+                .poison_item {
+                    @extend %item;
+                }
+            }
+        }
+    }
+}
+
+// 5 Секция
+
+.five {
+    background: url(../img/img_bg3.png);
+    @extend %bg;
+    height: 900px;
+    .container {
+        @extend %cont;
+        .happy {
+            @extend %ta;
+            @include flex (flex, center, center);
+            height: 900px;
+            h2 {
+                @include text ($Corm-f, 600, 128px, 166px, 3.5px);
+                @include pc ($cl1, 30px);
+                
+            }
+            em {
+                @include text ($Corm-f, 700, 32px, 41.6px, 1.2px);
+                font-style: normal;
+            }
+        }
+    }
+}
+
+// 6 Секция
+
+.six {
+    @extend %p;
+    .container {
+        @extend %cont;
+        .special {
+            .special_title {
+                @extend %ta;
+                @extend %first_txt;
+            }
+            .special_block {
+                @include grid (grid, repeat(3, 1fr), 20px);
+                .block {
+                    h2 {
+                        @extend %ta;
+                        @include text ($Corm-f, 600, 45px, 59px, 2px);
+                        margin-bottom: 20px;
+                    }
+                    .block_box {
+                        .block_items {
+                            @include flex (flex, space-between, center);
+                            .item_name {
+                                .name {
+                                    margin-bottom: 40px;
+                                    h3{
+                                        @include text ($Corm-f, 700, 23px, 30px, 1px);
+                                        color: $cl1;
+                                    }
+                                    p {
+                                        @include text ($Open-f, 400px, 16px, 28px, 0.5px);
+                                        color: $cl2;
+                                    }
+                                }
+                            }
+                            .item_price {
+                                .price {
+                                    margin-bottom: 68px;
+                                    p {
+                                        @include text ($Corm-f, 700, 23px, 30px, 1px)
+                                    }
+                                }
+                            }
+                        }
+                    }
+                
+                }
+            }
+        }
+        .btn {
+            @extend %ta;
+            button {
+                @extend %btn;
+                @include btn1 (44px, 136px, 5px);
+                margin: 50px 0;
+            }
+        }
+    }
+}
+
+// 6 Секция
+
+.seven {
+    background: url(../img/glavniy-bg.png);
+    @extend %bg;
+    @extend %p;
+    .container {
+        @extend %cont;
+        .find {
+            @include flex (flex, space-between, center);
+            .find_txt {
+                .txt_one {
+                    @extend %first_txt;
+                }
+                .txt_two {
+                    p {
+                        @include text ($Open-f, 400, 16px, 28px, 0.6px);
+                    @include pc ($cl2, 32px);
+                    }
+                }
+                .txt_last {
+                    h4 {
+                        @include text ($Corm-f, 700, 23px, 30px, 1px);
+                        @include pc ($cl1, 16px);
+                    }
+                    p {
+                        @include text ($Open-f, 400, 16px, 28px, 0.7px);
+                        padding-bottom: 16px;
+                    }
+                }
+                button {
+                    @extend %btn;
+                    @include btn1 (44px, 119px, 5px);
+                    margin-top: 40px;
+                    
+                }
+            }
+        }
+    }
+}
+
+// 6 Секция footer
+
+.footer {
+    background: url(../img/glavniy-bg.png);
+        @extend %bg;
+    padding-bottom: 150px;
+    max-height: 100%;
+    
+    .container {
+        @extend %cont;
+        @extend %footer;
+        .footer_box {
+            @extend %box;
+            
+            .footer_box_txt {
+                @extend %ta;
+                .txt {
+                    @extend %first_txt;
+                    margin-top: 40px;
+                    a {
+                        @include text ($Open-f, 400, 16px, 28px, 0.7px);
+                        color: white;
+                        
+                    }
+
+                }
+                input {
+                    @extend %inp2;
+
+                    }
+                    button {
+                        @extend %btn;
+                        @include btn1 (44px, 129px, 5px);
+                    }
+                }
+        }
+    }
+}
+
+// moodalka 
+
+.modalka {
+    @extend %modalka;
+    
+    .container {
+        @extend %cont;
+        .exe {
+            animation: spans2 2s;
+            span {
+                @extend %span;
+                
+            }
+           @extend %lines;
+
+        }
+        @extend %keyf;
+        .modalka_box {
+            @extend %box;
+            @extend %m_box;
+            .modalka_box_txt {
+                @extend %box_txt;
+            }
+        }
+    }
+}
